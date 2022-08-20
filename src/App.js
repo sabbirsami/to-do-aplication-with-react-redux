@@ -1,5 +1,6 @@
 import Header from "./Components/Header";
 import Navbar from "./Components/Navbar";
+import Footer from "./Components/Footer";
 import TodoList from "./Components/TodoList";
 
 function App() {
@@ -17,7 +18,7 @@ function App() {
 
                     <hr className="mt-4" />
 
-                    {/* <Footer /> */}
+                    <Footer />
                 </div>
             </div>
         </div>
