@@ -1,4 +1,4 @@
-import { initialState } from "./initialState";
+import initialState from "./initialState";
 import {
     ADDED,
     ALLCOMPLETED,
@@ -57,7 +57,7 @@ const reducer = (state = initialState, action) => {
             return state.filter((todo) => !todo.completed);
 
         default:
-            break;
+            return state;
     }
 };
 
