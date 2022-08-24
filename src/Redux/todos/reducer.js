@@ -27,20 +27,20 @@ const reducer = (state = initialState, action) => {
                     return todo;
                 } else {
                     return {
-                        ...state,
+                        ...todo,
                         completed: !todo.completed,
                     };
                 }
             });
         case COLORSELECTED:
             return state.map((todo) => {
-                const { todoId, color } = action;
-                if (todo.id !== action.payload) {
+                const { todoId, color } = action.payload;
+                if (todo.id !== todoId) {
                     return todo;
                 } else {
                     return {
                         ...todo,
-                        color: !color,
+                        color: color,
                     };
                 }
             });
