@@ -10,6 +10,13 @@ const initialState = [
         completed: false,
         color: "red",
     },
+
+    {
+        id: 3,
+        text: "Learn React Redux",
+        completed: false,
+        color: "green",
+    },
 ];
 
 export default initialState;
